@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: de_DE\n"
-"POT-Creation-Date: 2023-01-11 14:59+0100\n"
-"PO-Revision-Date: 2023-01-11 14:59+0100\n"
+"POT-Creation-Date: 2023-01-16 15:37+0100\n"
+"PO-Revision-Date: 2023-01-16 15:37+0100\n"
 "Last-Translator: WSP-PHP <developer@wsp-php.de>\n"
 "Language-Team: Sleimer Akina <support@opensim-tools.de>\n"
 "Language: de_DE\n"
@@ -27,9 +27,22 @@ msgstr ""
 msgid "keys"
 msgstr ""
 
-#: models/dashboard_model.php:39
+#: models/dashboard_model.php:43
 msgid "Read more"
 msgstr "Mehr lesen"
+
+#: views/dashboard/create_partner.php:13 views/dashboard/partner.php:14
+msgid "New create partnership"
+msgstr "Neue Partnerschaft schaffen"
+
+#: views/dashboard/create_partner.php:21 views/dashboard/griduser.php:21
+#: views/dashboard/groups.php:19 views/dashboard/partner.php:21
+msgid "Action"
+msgstr "Aktion"
+
+#: views/dashboard/create_partner.php:44
+msgid "Create partnership"
+msgstr "Partnerschaft schaffen"
 
 #: views/dashboard/credits.php:8
 msgid "note of thanks"
@@ -79,6 +92,187 @@ msgstr ""
 "Web Interface<br />\n"
 "                 <strong>Slimer Akina</strong>"
 
+#: views/dashboard/griduser.php:11
+msgid "Grid User & Grid User Settings"
+msgstr "Grid-Benutzer & Grid-Benutzereinstellungen"
+
+#: views/dashboard/griduser.php:12
+msgid "Create new avatar"
+msgstr "Neuen Avatar erstellen"
+
+#: views/dashboard/griduser.php:17
+msgid "Avatar Name"
+msgstr "Name des Avatars"
+
+#: views/dashboard/griduser.php:18
+msgid "Avatar E-Mail"
+msgstr "Avatar E-Mail"
+
+#: views/dashboard/griduser.php:19
+msgid "Avatar Created"
+msgstr "Avatar erstellt"
+
+#: views/dashboard/griduser.php:20
+msgid "Avatar Status"
+msgstr "Avatar-Status"
+
+#: views/dashboard/griduser.php:30
+msgid "Activ"
+msgstr "Aktiv"
+
+#: views/dashboard/griduser.php:30
+msgid "Inactive"
+msgstr "Inaktiv"
+
+#: views/dashboard/griduser.php:31 views/dashboard/groups.php:30
+#: views/dashboard/partner.php:29
+msgid "View"
+msgstr "Ansicht"
+
+#: views/dashboard/griduser.php:31 views/dashboard/partner.php:29
+msgid "Edit"
+msgstr "Ändern"
+
+#: views/dashboard/griduser.php:31
+msgid "Lock"
+msgstr "Sperren"
+
+#: views/dashboard/groups.php:11
+msgid "Groups & Groups Settings"
+msgstr "Gruppen & Gruppeneinstellungen"
+
+#: views/dashboard/groups.php:16
+msgid "Group Name"
+msgstr "Gruppen Name"
+
+#: views/dashboard/groups.php:17
+msgid "Group Founder"
+msgstr "Gruppengründer"
+
+#: views/dashboard/groups.php:18
+msgid "Group Members"
+msgstr "Gruppenmitglieder"
+
+#: views/dashboard/groups_view.php:12
+msgid "group profile"
+msgstr "Gruppenprofil"
+
+#: views/dashboard/groups_view.php:16
+msgid "Group-UUID"
+msgstr "Gruppen-UUID"
+
+#: views/dashboard/groups_view.php:20
+msgid "Founder"
+msgstr "Gründer"
+
+#: views/dashboard/groups_view.php:31
+msgid "Member"
+msgstr "Mitglieder"
+
+#: views/dashboard/groups_view.php:32
+msgid "Title"
+msgstr "Titel"
+
+#: views/dashboard/groups_view.php:33
+msgid "Status"
+msgstr "Status"
+
+#: views/dashboard/groups_view.php:47
+msgid "personal settings"
+msgstr "Persönliche Einstellungen"
+
+#: views/dashboard/groups_view.php:50
+msgid "Show on my profile"
+msgstr "Auf meinem Profil anzeigen"
+
+#: views/dashboard/groups_view.php:53
+msgid "receive group notifications"
+msgstr "Gruppenbenachrichtigungen erhalten"
+
+#: views/dashboard/groups_view.php:56
+msgid "Join the group chat"
+msgstr "Treten Sie dem Gruppenchat bei"
+
+#: views/dashboard/groups_view.php:61
+msgid "Owners"
+msgstr "Eigentümer"
+
+#: views/dashboard/groups_view.php:62
+msgid "Everyone"
+msgstr "Jeder"
+
+#: views/dashboard/groups_view.php:74
+msgid "group settings"
+msgstr "Gruppeneinstellungen"
+
+#: views/dashboard/groups_view.php:77
+msgid "Show in search"
+msgstr "In Suche anzeigen"
+
+#: views/dashboard/groups_view.php:80
+msgid "anyone can join"
+msgstr "Jeder kann mitmachen"
+
+#: views/dashboard/groups_view.php:83
+msgid "cost of joining"
+msgstr "Kosten für den Beitritt"
+
+#: views/dashboard/groups_view.php:88
+msgid "moderate content"
+msgstr "Inhalte moderieren"
+
+#: views/dashboard/groups_view.php:89
+msgid "General Content"
+msgstr "Allgemeiner Inhalt"
+
+#: views/dashboard/index.php:18
+msgid "Total Grid Users"
+msgstr "Grid-Benutzer"
+
+#: views/dashboard/index.php:27
+msgid "Total Region(s)"
+msgstr "Region(en) insgesamt"
+
+#: views/dashboard/index.php:36
+msgid "HG - Visitors"
+msgstr "HG - Besucher"
+
+#: views/dashboard/index.php:45
+msgid "User Online"
+msgstr "Benutzer Online"
+
+#: views/dashboard/index.php:54
+msgid "Online last month"
+msgstr "Online letzten Monat"
+
+#: views/dashboard/index.php:63
+msgid "Grid System Status"
+msgstr "Status des Gridserver"
+
+#: views/dashboard/partner.php:13
+msgid "partnership"
+msgstr "Partnerschaft"
+
+#: views/dashboard/region.php:11
+msgid "Regionen"
+msgstr "Regionen"
+
+#: views/dashboard/region.php:16
+msgid "Region Name"
+msgstr "Name der Region"
+
+#: views/dashboard/region.php:17
+msgid "Region Type"
+msgstr "Region Typ"
+
+#: views/dashboard/region.php:18
+msgid "Region Size"
+msgstr "Größe der Region"
+
+#: views/dashboard/region.php:19
+msgid "Region Owner"
+msgstr "Eigentümer der Region"
+
 #: views/dashboard/robust.php:13 views/sidebar.php:44
 msgid "Robust Settings"
 msgstr "Robust Einstellungen"
@@ -91,7 +285,7 @@ msgstr "Konfiguration verfügbar"
 msgid "Configuration not available"
 msgstr "Konfiguration nicht verfügbar"
 
-#: views/dashboard/robust.php:43 views/dashboard/settings.php:42
+#: views/dashboard/robust.php:44 views/dashboard/settings.php:42
 msgid "Submit"
 msgstr "Speichern"
 
@@ -163,23 +357,24 @@ msgstr "Mitwirkende"
 msgid "GridTalk Feeds"
 msgstr "GridTalk-Feeds"
 
-#: views/sidebar.php:64
+#: views/sidebar.php:50
+msgid "Helper Tools"
+msgstr ""
+
+#: views/sidebar.php:65
 msgid "Currently running OpenSim version:"
 msgstr "Derzeit laufende OpenSim-Version:"
 
-#: views/sidebar.php:72
+#: views/sidebar.php:73
 msgid "Welcome back,"
 msgstr "Willkommen zurück,"
 
-#: views/sidebar.php:72
+#: views/sidebar.php:73
 msgid "Logout"
 msgstr "Abmelden"
 
 #~ msgid "Money Server"
 #~ msgstr "Geldserver"
-
-#~ msgid "System Settings"
-#~ msgstr "System Einstellungen"
 
 #~ msgid "ADVERTISING"
 #~ msgstr "WERBUNG"

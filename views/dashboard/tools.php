@@ -44,7 +44,7 @@
                                         <h4>Helper Scripts for OpenSim Robust.ini</h4>
                                         <code>
                                             [GridInfoService]<br />
-                                            economy = https://<?php echo URL; ?>helpers/
+                                            economy = <?php echo URL; ?>helpers/
                                         </code>
                                         
                                         <br /><br />

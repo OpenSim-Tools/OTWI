@@ -99,7 +99,7 @@ class OpenSim extends Model {
     }
     
     public function os_groups() {
-        $sth = $this->osDB->prepare("SELECT * FROM os_groups_groups INNER Join os_groups_membership ON os_groups_groups.GroupID = os_groups_membership.GroupID");
+        $sth = $this->osDB->prepare("SELECT * FROM os_groups_groups");
         $sth->execute();
         
         $data = $sth->fetchAll(PDO::FETCH_ASSOC);
@@ -108,7 +108,7 @@ class OpenSim extends Model {
     }
     
     public function os_groups_groups($params) {
-        $sth = $this->osDB->prepare("SELECT * FROM os_groups_groups INNER Join os_groups_membership ON os_groups_groups.GroupID = os_groups_membership.GroupID WHERE os_groups_groups.GroupID = :groupid");
+        $sth = $this->osDB->prepare("SELECT * FROM os_groups_groups INNER Join os_groups_membership ON os_groups_groups.GroupID = os_groups_membership.GroupID WHERE os_groups_groups.GroupID = :groupid LIMIT 1");
         $sth->execute(array(
             ':groupid' => $params
         ));
@@ -139,6 +139,13 @@ class OpenSim extends Model {
     
     public function os_useraccounts() {
         $sth = $this->osDB->prepare("SELECT * FROM UserAccounts");
+        $sth->execute();
+        
+        return $sth->fetchAll(PDO::FETCH_ASSOC);
+    }
+    
+    public function os_userprofile_partner() {
+        $sth = $this->osDB->prepare("SELECT * FROM userprofile");
         $sth->execute();
         
         return $sth->fetchAll(PDO::FETCH_ASSOC);

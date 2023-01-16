@@ -3,7 +3,7 @@
 
 <div class="content-wrapper">
     <div class="container-fluid">
-
+<sup class="alert alert-danger"> || DEMO MODE ACTIVATED YOU CAN NOT CHANGE THIS || </sup>
         <!--Start Dashboard Content-->
         <div class="row mt-3">
             <div class="col-lg-6">
@@ -17,7 +17,7 @@
                             <?php if($value['property'] == 'update_src') { ?>
                             <div class="form-group">
                                 <label for="input-<?php echo $count; ?>"><?php echo $value['description']; ?></label>
-                                <select class="form-control" size="1" name="update">
+                                <select class="form-control" size="1" name="update" disabled>
                                     <option value="https://updates.opensim-tools.de/?src=major" <?php if($value['value'] == 'https://updates.opensim-tools.de/?src=major') { echo 'selected'; } ?>>OTWI Major</option>
                                     <option value="https://updates.opensim-tools.de/?src=beta" <?php if($value['value'] == 'https://updates.opensim-tools.de/?src=beta') { echo 'selected'; } ?>>OTWI Beta</option>
                                 </select>
@@ -25,7 +25,7 @@
                             <?php } elseif($value['property'] == 'language') { ?> 
                             <div class="form-group">
                                 <label for="input-<?php echo $count; ?>"><?php echo $value['description']; ?></label>
-                                <select class="form-control" size="1" name="language">
+                                <select class="form-control" size="1" name="language" disabled>
                                     <option value="de_DE" <?php if($value['value'] == 'de_DE') { echo 'selected'; } ?>>German</option>
                                     <option value="en_EN" <?php if($value['value'] == 'en_EN') { echo 'selected'; } ?>>English</option>
                                 </select>
@@ -33,13 +33,13 @@
                             <?php } else { ?>
                             <div class="form-group">
                                 <label for="input-<?php echo $count; ?>"><?php echo $value['description']; ?></label>
-                                <input type="text" class="form-control" id="input-<?php echo $count; ?>" name="<?php echo $value['property']; ?>" value="<?php echo $value['value']; ?>">
+                                <input type="text" class="form-control" id="input-<?php echo $count; ?>" name="<?php echo $value['property']; ?>" value="<?php echo $value['value']; ?>" disabled>
                             </div>
                             <?php } ?>
                             <?php } ?>
                             <div class="form-group">
                                 <br />
-                                <button type="submit" class="btn btn-light px-5"><i class="icon-lock"></i> <?php echo _('Submit'); ?></button>
+                                <button type="submit" class="btn btn-light px-5" disabled><i class="icon-lock"></i> <?php echo _('Submit'); ?></button>
                             </div>
                         </form>
                     </div>
@@ -58,7 +58,7 @@
            <form method="post" action="<?php echo URL; ?>dashboard/cache">
            <div class="form-group">
             <label for="input-6">GridTalk Cache</label>
-            <button type="submit" class="btn btn-danger px-5"><i class="icon-delete"></i> Cache Delete</button>
+            <button type="submit" class="btn btn-danger px-5" disabled><i class="icon-delete"></i> Cache Delete</button>
            </div>
           </form>
            <div class="form-group">

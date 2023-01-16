@@ -8,17 +8,17 @@
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="card">
-                    <div class="card-header">Grid User & Grid User Einstellungen</div>
-                    <p class="text-right"><a href="<?php echo URL; ?>dashboard/create_new_avatar" class="btn btn-dark">Create new avatar</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <div class="card-header"><?php echo _('Grid User & Grid User Settings'); ?></div>
+                    <p class="text-right"><a href="<?php echo URL; ?>dashboard/create_new_avatar" class="btn btn-dark"><?php echo _('Create new avatar'); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <div class="table-responsive">
                         <table class="table align-items-center table-flush table-borderless">
                             <thead>
                                 <tr>
-                                    <th>Avatar Name</th>
-                                    <th>Avatar E-Mail</th>
-                                    <th>Avatar Created</th>
-                                    <th>Avatar Status</th>
-                                    <th>Action</th>
+                                    <th><?php echo _('Avatar Name'); ?></th>
+                                    <th><?php echo _('Avatar E-Mail'); ?></th>
+                                    <th><?php echo _('Avatar Created'); ?></th>
+                                    <th><?php echo _('Avatar Status'); ?></th>
+                                    <th><?php echo _('Action'); ?></th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -27,8 +27,8 @@
                                         <td><?php echo $value['FirstName'] . ' ' . $value['LastName']; ?></td>
                                         <td><?php echo $value['Email']; ?></td>
                                         <td><?php echo date("d.m.Y H:i",$value['Created']); ?> Uhr</td>
-                                        <td><?php if($value['active'] == 1) { echo 'Aktiv'; } else { echo 'Inkativ'; } ?></td>
-                                        <td><a href="#" class="btn btn-primary">View</a>&nbsp;<a href="#" class="btn btn-success">Edit</a>&nbsp;<a href="#" class="btn btn-danger">Lock</a></td>
+                                        <td><?php if($value['active'] == 1) { echo _('Activ'); } else { echo _('Inactive'); } ?></td>
+                                        <td><a href="#" class="btn btn-primary"><?php echo _('View'); ?></a>&nbsp;<a href="#" class="btn btn-success"><?php echo _('Edit'); ?></a>&nbsp;<a href="#" class="btn btn-danger"><?php echo _('Lock'); ?></a></td>
                                     </tr>
                                 <?php } ?>
                             </tbody>

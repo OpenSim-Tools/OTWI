@@ -36,8 +36,15 @@ class dashboard extends Controller {
     }
 
     public function partner() {
-        $this->view->PageTitle = "OTWI | Partner";
+        $this->view->PageTitle = "OTWI | Partnerschaft";
+        $this->view->partnersearch = $this->_OPENSIM->os_userprofile_partner();
         $this->view->render('dashboard/partner', true);
+    }
+    
+    public function create_partner() {
+        $this->view->PageTitle = "OTWI | Partnerschaft erstellen";
+        $this->view->os_griduser = $this->_OPENSIM->os_griduser();
+        $this->view->render('dashboard/create_partner', true);
     }
 
     public function region() {

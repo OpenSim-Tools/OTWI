@@ -10,24 +10,26 @@
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="card">
-                    <div class="card-header">Avatar <=> Avatar</div>
-                    <p class="text-right"><a href="<?php echo URL; ?>dashboard/create_partner" class="btn btn-dark">Create Partner</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                    <div class="card-header"><?php echo _('partnership'); ?></div>
+                    <p class="text-right"><a href="<?php echo URL; ?>dashboard/create_partner" class="btn btn-dark"><?php echo _('New create partnership'); ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
                     <div class="table-responsive">
                         <table class="table align-items-center table-flush table-borderless">
                             <thead>
                                 <tr>
                                     <th>1. Avatar</th>
                                     <th>2. Avatar</th>
-                                    <th>Action</th>
+                                    <th><?php echo _('Action'); ?></th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <?php foreach ($this->os_groups as $value) { ?>
+                                <?php foreach ($this->partnersearch as $value) { ?>
+                                <?php if($value["profilePartner"] != UUID_ZERO) { ?>
                                     <tr>
-                                        <td><?php echo $value['Name']; ?></td>
-                                        <td><?php echo $value['FirstName'] . ' ' . $value['LastName']; ?></td>
-                                        <td><a href="#" class="btn btn-primary">View</a>&nbsp;<a href="#" class="btn btn-success">Edit</a></td>
-                                    </tr>
+                                        <td></td>
+                                        <td></td>
+                                        <td><a href="#" class="btn btn-delete"><?php echo _('delete'); ?></a></td>
+                                    </tr>                          
+                                <?php } ?>
                                 <?php } ?>
                             </tbody>
                         </table>

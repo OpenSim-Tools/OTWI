@@ -8,15 +8,15 @@
         <div class="row">
             <div class="col-12 col-lg-12">
                 <div class="card">
-                    <div class="card-header">Regionen</div>
+                    <div class="card-header"><?php echo _('Regionen'); ?></div>
                     <div class="table-responsive">
                         <table class="table align-items-center table-flush table-borderless">
                             <thead>
                                 <tr>
-                                    <th>Region Name</th>
-                                    <th>Region Type</th>
-                                    <th>Region Size</th>
-                                    <th>Region Owner</th>
+                                    <th><?php echo _('Region Name'); ?></th>
+                                    <th><?php echo _('Region Type'); ?></th>
+                                    <th><?php echo _('Region Size'); ?></th>
+                                    <th><?php echo _('Region Owner'); ?></th>
                              
                                 </tr>
                             </thead>

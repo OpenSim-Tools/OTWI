@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    &nbsp;&nbsp; <?php echo _('Currently running OpenSim version:'); ?> ###Unavilable##
+                    &nbsp;&nbsp; <?php echo _('Currently running OpenSim version:'); ?> ###Unavilable## | Standalone Version
                 </li>
             </ul>
 

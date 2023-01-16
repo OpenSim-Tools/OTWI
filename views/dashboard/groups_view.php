@@ -7,17 +7,17 @@
         <!--Start Dashboard Content-->
         <?php foreach ($this->os_groups as $value) { ?>
             <div class="row">
-                <div class="col-12 col-lg-8">
+                <div class="col-12 col-lg-12">
                     <div class="card">
-                        <div class="card-header">group profile - <?php echo $value['Name']; ?></div>
+                        <div class="card-header"><?php echo _('group profile'); ?> - <?php echo $value['Name']; ?></div>
                         <div class="table-responsive">
                             <table class="table align-items-center table-flush table-borderless">
                                 <tr>
-                                    <td>Group-UUID:</td>
+                                    <td><?php echo _('Group-UUID'); ?>:</td>
                                     <td colspan="2"><?php echo $value['GroupID']; ?></td>
                                 </tr>
                                 <tr>
-                                    <td>Founder:</td>
+                                    <td><?php echo _('Founder'); ?>:</td>
                                     <td colspan="2"><?php echo $this->findUser->os_findUser($value['FounderID']); ?></td>
                                 </tr>
                                 <tr>
@@ -28,9 +28,9 @@
                                     <td colspan="3">&nbsp;</td>
                                 </tr>
                                 <tr>
-                                    <td>Member</td>
-                                    <td class="text-center">Title</td>
-                                    <td class="text-right">Status</td>
+                                    <td><?php echo _('Member'); ?></td>
+                                    <td class="text-center"><?php echo _('Title'); ?></td>
+                                    <td class="text-right"><?php echo _('Status'); ?></td>
                                 </tr>
                                 <?php foreach($this->membership as $member) { ?>
                                 
@@ -44,22 +44,22 @@
                                     <td class="text-center">
                                         <table class="table align-items-center table-flush table-borderless">
                                             <tr>
-                                                <td>personal settings</td>
+                                                <td><?php echo _('personal settings'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" disabled <?php if ($value['ListInProfile'] == 1) { echo 'checked'; } ?>> Show on my profile</td>
+                                                <td><input type="checkbox" disabled <?php if ($value['ListInProfile'] == 1) { echo 'checked'; } ?>> <?php echo _('Show on my profile'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" disabled <?php if ($value['AcceptNotices'] == 1) { echo 'checked'; } ?>> receive group notifications</td>
+                                                <td><input type="checkbox" disabled <?php if ($value['AcceptNotices'] == 1) { echo 'checked'; } ?>> <?php echo _('receive group notifications'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" disabled <?php if ($value['AcceptNotices'] == 1) { echo 'checked'; } ?>> Join the group chat</td>
+                                                <td><input type="checkbox" disabled <?php if ($value['AcceptNotices'] == 1) { echo 'checked'; } ?>> <?php echo _('Join the group chat'); ?></td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <select size="1">
-                                                        <option <?php if($value['MaturePublish'] == 1) { echo 'selected'; } ?>>Owners</option>
-                                                        <option <?php if($value['MaturePublish'] == 0) { echo 'selected'; } ?>>Everyone</option>
+                                                        <option <?php if($value['MaturePublish'] == 1) { echo 'selected'; } ?>><?php echo _('Owners'); ?></option>
+                                                        <option <?php if($value['MaturePublish'] == 0) { echo 'selected'; } ?>><?php echo _('Everyone'); ?></option>
                                                     </select>
                                                 </td>
                                             </tr>
@@ -71,22 +71,22 @@
                                     <td class="text-center">
                                         <table class="table align-items-center table-flush table-borderless">
                                             <tr>
-                                                <td>group settings</td>
+                                                <td><?php echo _('group settings'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" disabled <?php if ($value['ShowInList'] == 1) { echo 'checked'; } ?>> Show in search</td>
+                                                <td><input type="checkbox" disabled <?php if ($value['ShowInList'] == 1) { echo 'checked'; } ?>> <?php echo _('Show in search'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td><input type="checkbox" disabled <?php if ($value['OpenEnrollment'] == 1) { echo 'checked'; } ?>> anyone can join</td>
+                                                <td><input type="checkbox" disabled <?php if ($value['OpenEnrollment'] == 1) { echo 'checked'; } ?>> <?php echo _('anyone can join'); ?></td>
                                             </tr>
                                             <tr>
-                                                <td>cost of joining: <strong><?php echo $value['MembershipFee']; ?></strong>
+                                                <td><?php echo _('cost of joining'); ?>: <strong><?php echo $value['MembershipFee']; ?></strong>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <select size="1">
-                                                        <option <?php if($value['MaturePublish'] == 1) { echo 'selected'; } ?>>moderate content</option>
-                                                        <option <?php if($value['MaturePublish'] == 0) { echo 'selected'; } ?>>General Content</option>
+                                                        <option <?php if($value['MaturePublish'] == 1) { echo 'selected'; } ?>><?php echo _('moderate content'); ?></option>
+                                                        <option <?php if($value['MaturePublish'] == 0) { echo 'selected'; } ?>><?php echo _('General Content'); ?></option>
                                                     </select>
                                                 </td>
                                             </tr>

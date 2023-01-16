@@ -15,7 +15,7 @@
                                         <div class="progress my-3" style="height:3px;">
                                             <div class="progress-bar" style="width:100%"></div>
                                         </div>
-                                        <p class="mb-0 text-white small-font">Total Grid Users</p>
+                                        <p class="mb-0 text-white small-font"><?php echo _('Total Grid Users'); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-xl-2 border-light">
@@ -24,7 +24,7 @@
                                         <div class="progress my-3" style="height:3px;">
                                             <div class="progress-bar" style="width:100%"></div>
                                         </div>
-                                        <p class="mb-0 text-white small-font">Total Region(s)</p>
+                                        <p class="mb-0 text-white small-font"><?php echo _('Total Region(s)'); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-xl-2 border-light">
@@ -33,7 +33,7 @@
                                         <div class="progress my-3" style="height:3px;">
                                             <div class="progress-bar" style="width:100%"></div>
                                         </div>
-                                        <p class="mb-0 text-white small-font">HG - Visitors</p>
+                                        <p class="mb-0 text-white small-font"><?php echo _('HG - Visitors'); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-xl-2 border-light">
@@ -42,7 +42,7 @@
                                         <div class="progress my-3" style="height:3px;">
                                             <div class="progress-bar" style="width:100%"></div>
                                         </div>
-                                        <p class="mb-0 text-white small-font">User Online</p>
+                                        <p class="mb-0 text-white small-font"><?php echo _('User Online'); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-xl-2 border-light">
@@ -51,7 +51,7 @@
                                         <div class="progress my-3" style="height:3px;">
                                             <div class="progress-bar" style="width:100%"></div>
                                         </div>
-                                        <p class="mb-0 text-white small-font">Online last month</p>
+                                        <p class="mb-0 text-white small-font"><?php echo _('Online last month'); ?></p>
                                     </div>
                                 </div>
                                 <div class="col-12 col-lg-6 col-xl-2 border-light">
@@ -60,7 +60,7 @@
                                         <div class="progress my-3" style="height:3px;">
                                             <div class="progress-bar" style="width:100%"></div>
                                         </div>
-                                        <p class="mb-0 text-white small-font">Grid System Status</p>
+                                        <p class="mb-0 text-white small-font"><?php echo _('Grid System Status'); ?></p>
                                     </div>
                                 </div>
                             </div>

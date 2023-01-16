@@ -8,15 +8,15 @@
             <div class="row">
                         <div class="col-12 col-lg-12">
                             <div class="card">
-                                <div class="card-header">Gruppen & Gruppen Einstellungen</div>
+                                <div class="card-header"><?php echo _('Groups & Groups Settings'); ?></div>
                                 <div class="table-responsive">
                                     <table class="table align-items-center table-flush table-borderless">
                                         <thead>
                                             <tr>
-                                                <th>Group Name</th>
-                                                <th>Group Founder</th>
-                                                <th>Group Members</th>
-                                                <th>Action</th>
+                                                <th><?php echo _('Group Name'); ?></th>
+                                                <th><?php echo _('Group Founder'); ?></th>
+                                                <th><?php echo _('Group Members'); ?></th>
+                                                <th><?php echo _('Action'); ?></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -27,7 +27,7 @@
                                                 <td><?php
                                                 if($this->findUser->os_findUser($value['FounderID']) == " ") { echo 'HG-Group'; } else { echo $this->findUser->os_findUser($value['FounderID']); } ?></td>
                                                 <td><?php echo $value['ShowInList']; ?></td>
-                                                <td><a href="<?php echo URL; ?>dashboard/groups_view/<?php echo $value['GroupID']; ?>" class="btn btn-primary">View</a></td>
+                                                <td><a href="<?php echo URL; ?>dashboard/groups_view/<?php echo $value['GroupID']; ?>" class="btn btn-primary"><?php echo _('View'); ?></a></td>
                                             </tr>
                                             <?php } ?>
                                         </tbody>
