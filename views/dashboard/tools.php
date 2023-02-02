@@ -26,7 +26,7 @@
                                             [LoginService]<br />
                                             ; For V3 destination guide<br />
                                             ; DestinationGuide = "${Const|BaseURL}/inc/destinations-inworld.php"<br />
-                                            DestinationGuide = "https://guide.opensim-tools.de/inc/destinations-inworld.php"<br />
+                                            DestinationGuide = "https://guide.osp-php.de/inc/destinations-inworld.php"<br />
                                         </code>
                                         <br /><h4>OpenSim.ini</h4>
                                         <code>
@@ -44,12 +44,13 @@
                                         <h4>Helper Scripts for OpenSim Robust.ini</h4>
                                         <code>
                                             [GridInfoService]<br />
-                                            economy = <?php echo URL; ?>helpers/
+                                            economy = <?php echo URL; ?>helpers/<br />
+                                            <-- This is not implements is coming soon -->
                                         </code>
                                         
                                         <br /><br />
                                         <h4>LSL Script for Destination Guide</h4>
-                                        <a href="https://opensim-tools.de/lsl/terminal.lsl" target="_blank" class="btn btn-success">Donwload/View LSL Script</a>
+                                        <a href="https://osp-php.de/lsl/terminal.lsl" target="_blank" class="btn btn-success">Donwload/View LSL Script</a>
                                     </td>
                                 </tr>
                             </tbody>
@@ -75,7 +76,7 @@
 <footer class="footer">
     <div class="container">
         <div class="text-center">
-            Copyright 2023 by OpenSim Tools. Alle Rechte vorbehalten. <?php echo $this->version; ?>
+            Copyright 2023 by OSP-PHP. Alle Rechte vorbehalten. <?php echo $this->version; ?>
         </div>
     </div>
 </footer>

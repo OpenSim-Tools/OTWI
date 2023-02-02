@@ -5,7 +5,8 @@
         <div class="container-fluid">
 
             <!--Start Dashboard Content-->
-            
+            <p>Not Available of this Version</p>
+            <p>This Feature is coming soon</p>
             <!--End Dashboard Content-->
 
         </div>
@@ -23,7 +24,7 @@
     <footer class="footer">
         <div class="container">
             <div class="text-center">
-                Copyright 2023 by OpenSim Tools. Alle Rechte vorbehalten. <?php echo $this->version; ?>
+                Copyright 2023 by OSP-PHP. Alle Rechte vorbehalten. <?php echo $this->version; ?>
             </div>
         </div>
     </footer>

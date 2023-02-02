@@ -54,7 +54,7 @@
 <footer class="footer">
     <div class="container">
         <div class="text-center">
-            Copyright 2023 by OpenSim Tools. Alle Rechte vorbehalten. <?php echo $this->version; ?>
+            Copyright 2023 by OSP-PHP. Alle Rechte vorbehalten. <?php echo $this->version; ?>
         </div>
     </div>
 </footer>

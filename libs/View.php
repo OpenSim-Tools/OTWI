@@ -2,8 +2,8 @@
 
 class View {
 
-    public $_VERSION = "OTWI v1.0.0 (Build 20230116) | Alpha";
-    public $_VERSION_SRC = "1.0.0.20230116";
+    public $_VERSION = "OSP (S) v1.0.0 (Build 20230202) | BETA";
+    public $_VERSION_SRC = "1.0.0.20230202";
 
     function __construct() {
         // no

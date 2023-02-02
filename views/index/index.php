@@ -10,7 +10,7 @@
 		 	<div class="text-center">
 		 		<img src="<?php echo URL; ?>assets/images/logo-icon.png" alt="logo icon">
 		 	</div>
-		  <div class="card-title text-uppercase text-center py-3"><?php echo _('OTWI Login'); ?></div>
+		  <div class="card-title text-uppercase text-center py-3"><?php echo _('OSP (S) Login'); ?></div>
                   <form method="post" action="/account/run">
 			  <div class="form-group">
 			  <label for="exampleInputUsername" class="sr-only"><?php echo _('Username'); ?></label>
@@ -44,5 +44,5 @@
 	
 	</div><!--wrapper-->
 <footer style="align-items:center; text-align: center; position: absolute; bottom: 0; width: 100%;">
-    <p>Copyright 2023 by OpenSim Tools. Alle Rechte vorbehalten.</p>
+    <p>Copyright 2023 by OSP-PHP (S). Alle Rechte vorbehalten.</p>
 </footer>

@@ -4,8 +4,8 @@
         <meta charset="utf-8"/>
         <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-        <meta name="description" content="OpenSim Tool Webinterface"/>
-        <meta name="author" content="Sleimer Akina <support@opensim-tools.de>"/>
+        <meta name="description" content="OpenSim Service Panel"/>
+        <meta name="author" content="Sleimer Akina <support@osp-php.de>"/>
         <title><?php echo $this->PageTitle; ?></title>
         <!-- loader-->
         <!-- <link href="<?php echo URL; ?>assets/css/pace.min.css" rel="stylesheet"/>

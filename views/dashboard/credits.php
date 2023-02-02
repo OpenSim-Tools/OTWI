@@ -23,7 +23,7 @@
                  I hope this project is appreciated as much as I am.<br /><br />
                 
                  Many thanks!<br />
-                 Developer of OpenSim Tool Web Interface<br />
+                 Developer of OpenSim Service Panel<br />
                  <strong>Slimer Akina</strong>'); ?>
                 
                 
@@ -45,7 +45,7 @@
     <footer class="footer">
         <div class="container">
             <div class="text-center">
-                Copyright 2023 by OpenSim Tools. Alle Rechte vorbehalten. <?php echo $this->version; ?>
+                Copyright 2023 by OSP-PHP. Alle Rechte vorbehalten. <?php echo $this->version; ?>
             </div>
         </div>
     </footer>

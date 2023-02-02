@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: de_DE\n"
-"POT-Creation-Date: 2023-01-16 15:37+0100\n"
-"PO-Revision-Date: 2023-01-16 15:37+0100\n"
+"POT-Creation-Date: 2023-01-24 22:09+0100\n"
+"PO-Revision-Date: 2023-01-24 22:09+0100\n"
 "Last-Translator: WSP-PHP <developer@wsp-php.de>\n"
 "Language-Team: Sleimer Akina <support@opensim-tools.de>\n"
 "Language: de_DE\n"
@@ -30,6 +30,31 @@ msgstr ""
 #: models/dashboard_model.php:43
 msgid "Read more"
 msgstr "Mehr lesen"
+
+#: views/dashboard/create_new_avatar.php:13
+msgid "Create new Avatar for this Grid"
+msgstr "Erstelle einen neuen Avatar für dieses Grid"
+
+#: views/dashboard/create_new_avatar.php:19
+msgid "FirstName"
+msgstr "Vorname"
+
+#: views/dashboard/create_new_avatar.php:23
+msgid "LastName"
+msgstr "Nachname"
+
+#: views/dashboard/create_new_avatar.php:27
+msgid "E-Mail (optional)"
+msgstr "Avatar E-Mail"
+
+#: views/dashboard/create_new_avatar.php:31 views/index/index.php:25
+msgid "Password"
+msgstr "Passwort"
+
+#: views/dashboard/create_new_avatar.php:36 views/dashboard/robust.php:44
+#: views/dashboard/settings.php:42
+msgid "Submit"
+msgstr "Speichern"
 
 #: views/dashboard/create_partner.php:13 views/dashboard/partner.php:14
 msgid "New create partnership"
@@ -72,7 +97,7 @@ msgid ""
 "><br />\n"
 "                \n"
 "                 Many thanks!<br />\n"
-"                 Developer of OpenSim Tool Web Interface<br />\n"
+"                 Developer of OpenSim Service Panel<br />\n"
 "                 <strong>Slimer Akina</strong>"
 msgstr ""
 "Zunächst möchte ich mich bei der GridTalk-Community bedanken.<br />Dieses "
@@ -125,17 +150,20 @@ msgid "Inactive"
 msgstr "Inaktiv"
 
 #: views/dashboard/griduser.php:31 views/dashboard/groups.php:30
-#: views/dashboard/partner.php:29
 msgid "View"
 msgstr "Ansicht"
 
-#: views/dashboard/griduser.php:31 views/dashboard/partner.php:29
+#: views/dashboard/griduser.php:31
 msgid "Edit"
 msgstr "Ändern"
 
 #: views/dashboard/griduser.php:31
 msgid "Lock"
 msgstr "Sperren"
+
+#: views/dashboard/griduser.php:31
+msgid "Activate"
+msgstr "Aktivieren"
 
 #: views/dashboard/groups.php:11
 msgid "Groups & Groups Settings"
@@ -253,6 +281,10 @@ msgstr "Status des Gridserver"
 msgid "partnership"
 msgstr "Partnerschaft"
 
+#: views/dashboard/partner.php:30
+msgid "delete"
+msgstr "Löschen"
+
 #: views/dashboard/region.php:11
 msgid "Regionen"
 msgstr "Regionen"
@@ -285,17 +317,13 @@ msgstr "Konfiguration verfügbar"
 msgid "Configuration not available"
 msgstr "Konfiguration nicht verfügbar"
 
-#: views/dashboard/robust.php:44 views/dashboard/settings.php:42
-msgid "Submit"
-msgstr "Speichern"
-
 #: views/dashboard/settings.php:12 views/sidebar.php:47
-msgid "OTWI Settings"
-msgstr "OTWI-Einstellungen"
+msgid "OSP Settings"
+msgstr "OSP-Einstellungen"
 
 #: views/index/index.php:13
-msgid "OTWI Login"
-msgstr "OTWI Anmelden"
+msgid "OSP (S) Login"
+msgstr "OSP (S) Anmeldung"
 
 #: views/index/index.php:16
 msgid "Username"
@@ -304,10 +332,6 @@ msgstr "Benutzername"
 #: views/index/index.php:18
 msgid "Enter Username"
 msgstr "Benutzernamen eingeben"
-
-#: views/index/index.php:25
-msgid "Password"
-msgstr "Passwort"
 
 #: views/index/index.php:27
 msgid "Enter Password"
@@ -346,8 +370,8 @@ msgid "Remote Settings"
 msgstr "Remote-Einstellungen"
 
 #: views/sidebar.php:46
-msgid "OTWI Update(s)"
-msgstr "OTWI-Aktualisierung(en)"
+msgid "OSP Update(s)"
+msgstr "OSP-Aktualisierung(en)"
 
 #: views/sidebar.php:48
 msgid "Credits"
@@ -359,7 +383,7 @@ msgstr "GridTalk-Feeds"
 
 #: views/sidebar.php:50
 msgid "Helper Tools"
-msgstr ""
+msgstr "Hilfswerkzeuge"
 
 #: views/sidebar.php:65
 msgid "Currently running OpenSim version:"

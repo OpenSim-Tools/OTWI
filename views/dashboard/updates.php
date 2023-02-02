@@ -5,9 +5,9 @@
         <div class="container-fluid">
 
             <!--Start Dashboard Content-->
-            <h1>OTWI Software Updates</h1>
+            <h1>OSP(S) Software Updates</h1>
             <p><?php echo $this->update->otwi_updater($this->otserv); ?></p>
-            OpenSource Repository GitHub: <a href="https://github.com/OpenSim-Tools/OTWI" target="_blank">OpenSim Tools by GitHub</a>
+            OpenSource Repository GitHub: <a href="https://github.com/OpenSim-Tools/OTWI" target="_blank">OSP-PHP by GitHub</a>
             <!--End Dashboard Content-->
 
         </div>
@@ -25,7 +25,7 @@
     <footer class="footer">
         <div class="container">
             <div class="text-center">
-                Copyright 2023 by OpenSim Tools. Alle Rechte vorbehalten. <?php echo $this->version; ?>
+                Copyright 2023 by OSP-PHP. Alle Rechte vorbehalten. <?php echo $this->version; ?>
             </div>
         </div>
     </footer>

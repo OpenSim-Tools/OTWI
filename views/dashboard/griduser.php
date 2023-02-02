@@ -28,7 +28,17 @@
                                         <td><?php echo $value['Email']; ?></td>
                                         <td><?php echo date("d.m.Y H:i",$value['Created']); ?> Uhr</td>
                                         <td><?php if($value['active'] == 1) { echo _('Activ'); } else { echo _('Inactive'); } ?></td>
-                                        <td><a href="#" class="btn btn-primary"><?php echo _('View'); ?></a>&nbsp;<a href="#" class="btn btn-success"><?php echo _('Edit'); ?></a>&nbsp;<a href="#" class="btn btn-danger"><?php echo _('Lock'); ?></a></td>
+                                        <td>
+                                            <a href="#" class="btn btn-primary"><?php echo _('View'); ?></a>&nbsp;
+                                            <a href="#" class="btn btn-success"><?php echo _('Edit'); ?></a>&nbsp;
+                                                <?php 
+                                                if($value['active'] == 1) { 
+                                                    echo '<a href="' . URL . 'dashboard/griduser/' . $value['PrincipalID'] . '_deactivate" class="btn btn-danger">' . _('Lock') . '</a>'; 
+                                                    
+                                                } else { 
+                                                    echo '<a href="' . URL . 'dashboard/griduser/' . $value['PrincipalID'] . '_activate" class="btn btn-warning">' . _('Activate') . '</a>'; } 
+                                                    ?>
+                                            </td>
                                     </tr>
                                 <?php } ?>
                             </tbody>
@@ -54,7 +64,7 @@
 <footer class="footer">
     <div class="container">
         <div class="text-center">
-            Copyright 2023 by OpenSim Tools. Alle Rechte vorbehalten. <?php echo $this->version; ?>
+            Copyright 2023 by OSP-PHP. Alle Rechte vorbehalten. <?php echo $this->version; ?>
         </div>
     </div>
 </footer>

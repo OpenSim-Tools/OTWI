@@ -6,7 +6,7 @@
         <div class="brand-logo">
             <a href="<?php echo URL; ?>dashboard">
                 <img src="<?php echo URL; ?>assets/images/logo-icon.png" class="logo-icon" alt="logo icon">
-                <h5 class="logo-text">OTWI Admin</h5>
+                <h5 class="logo-text">OSP(S) Admin</h5>
             </a>
         </div>
         <ul class="sidebar-menu do-nicescrol">
@@ -43,8 +43,8 @@
             </li>
             <li><a href="<?php echo URL; ?>dashboard/robust"><i class="zmdi zmdi-grid"></i> <span><?php echo _('Robust Settings'); ?></span></a></li>
             <li><a href="<?php echo URL; ?>dashboard/remote"><i class="zmdi zmdi-grid"></i> <span><?php echo _('Remote Settings'); ?></span></a></li>
-            <li><a href="<?php echo URL; ?>dashboard/updates"><i class="zmdi zmdi-grid"></i> <span><?php echo _('OTWI Update(s)'); ?></span></a></li>
-            <li><a href="<?php echo URL; ?>dashboard/settings"><i class="zmdi zmdi-grid"></i> <span><?php echo _('OTWI Settings'); ?></span></a></li>
+            <li><a href="<?php echo URL; ?>dashboard/updates"><i class="zmdi zmdi-grid"></i> <span><?php echo _('OSP Update(s)'); ?></span></a></li>
+            <li><a href="<?php echo URL; ?>dashboard/settings"><i class="zmdi zmdi-grid"></i> <span><?php echo _('OSP Settings'); ?></span></a></li>
             <li><a href="<?php echo URL; ?>dashboard/credits"><i class="zmdi zmdi-grid"></i> <span><?php echo _('Credits'); ?></span></a></li>
             <li><a href="<?php echo URL; ?>dashboard/feeds"><i class="zmdi zmdi-assignment"></i> <span><?php echo _('GridTalk Feeds'); ?></span></a></li>
             <li><a href="<?php echo URL; ?>dashboard/tools"><i class="zmdi zmdi-assignment"></i> <span><?php echo _('Helper Tools'); ?></span></a></li>
@@ -62,7 +62,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    &nbsp;&nbsp; <?php echo _('Currently running OpenSim version:'); ?> ###Unavilable## | Standalone Version
+                    &nbsp;&nbsp; <?php echo _('Currently running OpenSim version:'); ?> <i>Not Implemented by this Version</i> | Standalone Version
                 </li>
             </ul>
 
