@@ -28,4 +28,4 @@ Have fun ;)
 Support
 ========
 
-support@opensim-tools.de
+support@osp-php.de
